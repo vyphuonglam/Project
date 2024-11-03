@@ -17,7 +17,7 @@ def get_safety_tips(risk_level):
     )
     return response.choices[0].text.strip()
 
-# Load synthetic water testing data (replace with actual data as needed)
+# Load synthetic water testing data 
 data = pd.read_csv("/path/to/synthetic_water_testing_data.csv")
 
 st.title("Water Quality Prediction & Emergency Alert System")
