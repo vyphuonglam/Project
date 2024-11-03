@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 import openai
 
 # Initialize the OpenAI client
-openai.api_key = "OPENAI_API_KEY"
+openai.api_key = "YOUR-API-KEY-HERE"
 
 # Function to get AI-generated safety tips based on prediction
 def get_safety_tips(risk_level):
