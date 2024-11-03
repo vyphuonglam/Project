@@ -1,0 +1,101 @@
+Water Source,Testing Method,Date of Test,Lead (ppb),Lead (ppb) Interpretation,Chlorine (ppm),Chlorine (ppm) Interpretation,Nitrates/Nitrites (ppm),Nitrates/Nitrites (ppm) Interpretation,"Bacteria (e.g., E. coli)","Bacteria (e.g., E. coli) Interpretation",Pesticides (ppm),Pesticides (ppm) Interpretation,Herbicides (ppm),Herbicides (ppm) Interpretation
+Bottled water,Test strips,2024-09-04,,,2.82,Safe,2.85,Safe,0.0,Safe,4.73,Safe,3.86,Safe
+Bottled water,Digital Test Kits,2023-12-06,9.52,Safe,,,,,,,0.87,Safe,4.08,Safe
+Filtered water,Test strips,2023-11-22,,,2.44,Safe,0.43,Safe,,,,,2.44,Safe
+Bottled water,Digital Test Kits,2023-11-28,,,1.45,Safe,3.92,Safe,0.0,Safe,,,,
+Rainwater Collection,Visual Inspection,2023-11-11,,,0.02,Safe,,,1.0,Unsafe,2.55,Safe,,
+Tap water,Visual Inspection,2024-03-29,8.93,Safe,3.64,Safe,,,0.0,Safe,4.41,Safe,,
+Rainwater Collection,Test strips,2024-04-28,,,0.14,Safe,4.93,Safe,0.0,Safe,,,,
+Well water,Test strips,2024-05-02,11.05,Safe,0.6,Safe,5.64,Safe,1.0,Unsafe,4.52,Safe,,
+Well water,Test strips,2024-09-28,10.46,Safe,1.49,Safe,,,,,4.0,Safe,3.93,Safe
+Tap water,Test strips,2024-09-05,,,3.43,Safe,3.42,Safe,0.0,Safe,2.6,Safe,,
+Ocean water,Test strips,2024-03-30,0.54,Safe,2.19,Safe,,,1.0,Unsafe,,,1.71,Safe
+Bottled water,Digital Test Kits,2024-08-18,,,3.93,Safe,9.19,Safe,0.0,Safe,0.38,Safe,2.91,Safe
+Filtered water,Visual Inspection,2024-01-30,13.86,Safe,1.5,Safe,,,1.0,Unsafe,,,0.33,Safe
+Well water,Visual Inspection,2024-08-18,7.02,Safe,1.25,Safe,,,1.0,Unsafe,4.4,Safe,,
+Tap water,Visual Inspection,2024-08-26,,,,,9.04,Safe,1.0,Unsafe,,,0.92,Safe
+Tap water,Digital Test Kits,2024-07-12,5.93,Safe,,,5.32,Safe,,,,,3.35,Safe
+Well water,Digital Test Kits,2024-07-28,10.53,Safe,,,,,1.0,Unsafe,3.06,Safe,2.88,Safe
+Bottled water,Test strips,2024-01-27,6.3,Safe,2.21,Safe,,,1.0,Unsafe,2.9,Safe,1.3,Safe
+Bottled water,Test strips,2024-06-10,12.9,Safe,,,7.94,Safe,,,,,1.71,Safe
+Filtered water,Digital Test Kits,2024-03-10,14.46,Safe,3.03,Safe,0.91,Safe,,,0.6,Safe,1.44,Safe
+Ocean water,Visual Inspection,2024-01-18,7.5,Safe,3.69,Safe,,,,,1.51,Safe,3.41,Safe
+Filtered water,Visual Inspection,2024-03-02,6.59,Safe,2.41,Safe,,,0.0,Safe,3.85,Safe,,
+Ocean water,Visual Inspection,2024-07-28,10.69,Safe,2.12,Safe,8.6,Safe,1.0,Unsafe,1.63,Safe,,
+Rainwater Collection,Digital Test Kits,2024-02-08,12.75,Safe,2.71,Safe,0.16,Safe,0.0,Safe,3.76,Safe,0.66,Safe
+Rainwater Collection,Digital Test Kits,2023-12-22,13.69,Safe,,,6.0,Safe,,,3.34,Safe,2.2,Safe
+Tap water,Test strips,2024-06-05,,,0.53,Safe,,,,,2.36,Safe,1.66,Safe
+Rainwater Collection,Test strips,2023-12-13,8.58,Safe,2.72,Safe,,,,,,,4.67,Safe
+Tap water,Visual Inspection,2023-11-30,10.22,Safe,2.84,Safe,1.56,Safe,0.0,Safe,2.3,Safe,,
+Bottled water,Test strips,2024-10-18,4.32,Safe,0.06,Safe,,,0.0,Safe,4.42,Safe,0.7,Safe
+Rainwater Collection,Digital Test Kits,2024-06-02,1.23,Safe,1.0,Safe,7.94,Safe,1.0,Unsafe,4.36,Safe,,
+Tap water,Visual Inspection,2024-01-13,3.11,Safe,1.34,Safe,9.24,Safe,0.0,Safe,0.56,Safe,3.05,Safe
+Rainwater Collection,Digital Test Kits,2024-05-12,,,,,,,1.0,Unsafe,,,1.48,Safe
+Filtered water,Digital Test Kits,2024-03-10,5.11,Safe,,,8.91,Safe,,,,,1.79,Safe
+Ocean water,Visual Inspection,2024-01-02,,,1.2,Safe,3.81,Safe,1.0,Unsafe,1.55,Safe,2.59,Safe
+Filtered water,Test strips,2024-03-03,2.58,Safe,,,1.95,Safe,0.0,Safe,,,,
+Bottled water,Test strips,2024-10-23,13.53,Safe,0.84,Safe,,,0.0,Safe,1.0,Safe,1.91,Safe
+Well water,Test strips,2023-12-05,8.42,Safe,2.39,Safe,0.97,Safe,,,2.62,Safe,2.53,Safe
+Ocean water,Visual Inspection,2024-09-21,2.84,Safe,,,1.78,Safe,1.0,Unsafe,3.28,Safe,2.73,Safe
+Filtered water,Test strips,2024-04-09,,,1.4,Safe,2.45,Safe,0.0,Safe,3.3,Safe,3.27,Safe
+Ocean water,Visual Inspection,2024-09-26,9.43,Safe,0.28,Safe,,,1.0,Unsafe,0.45,Safe,,
+Bottled water,Visual Inspection,2024-10-12,14.97,Safe,2.64,Safe,,,0.0,Safe,,,,
+Tap water,Visual Inspection,2023-12-08,,,1.29,Safe,3.37,Safe,1.0,Unsafe,2.75,Safe,0.84,Safe
+Tap water,Test strips,2024-08-11,,,3.64,Safe,5.8,Safe,,,,,4.55,Safe
+Ocean water,Test strips,2024-05-11,,,,,4.94,Safe,0.0,Safe,0.32,Safe,,
+Ocean water,Test strips,2024-06-05,,,0.23,Safe,6.54,Safe,1.0,Unsafe,2.06,Safe,,
+Rainwater Collection,Visual Inspection,2024-03-12,7.5,Safe,,,,,1.0,Unsafe,3.15,Safe,2.19,Safe
+Filtered water,Test strips,2024-05-10,3.64,Safe,1.05,Safe,6.02,Safe,,,,,1.45,Safe
+Bottled water,Visual Inspection,2024-08-12,5.14,Safe,1.75,Safe,0.95,Safe,0.0,Safe,3.26,Safe,0.02,Safe
+Tap water,Visual Inspection,2024-07-22,,,1.16,Safe,0.57,Safe,,,3.41,Safe,3.88,Safe
+Tap water,Digital Test Kits,2024-01-04,2.6,Safe,3.58,Safe,5.46,Safe,1.0,Unsafe,0.74,Safe,4.97,Safe
+Tap water,Visual Inspection,2023-11-05,6.4,Safe,,,,,0.0,Safe,0.52,Safe,1.79,Safe
+Well water,Test strips,2024-02-10,7.94,Safe,0.87,Safe,0.27,Safe,0.0,Safe,1.13,Safe,,
+Rainwater Collection,Digital Test Kits,2024-01-25,,,2.17,Safe,,,1.0,Unsafe,,,,
+Well water,Test strips,2024-05-03,0.75,Safe,1.97,Safe,6.27,Safe,0.0,Safe,2.51,Safe,2.06,Safe
+Filtered water,Digital Test Kits,2024-08-08,,,3.89,Safe,7.95,Safe,1.0,Unsafe,0.06,Safe,2.54,Safe
+Tap water,Digital Test Kits,2024-04-22,,,,,6.43,Safe,1.0,Unsafe,4.61,Safe,,
+Rainwater Collection,Test strips,2024-07-28,2.64,Safe,2.34,Safe,3.95,Safe,0.0,Safe,,,3.31,Safe
+Well water,Visual Inspection,2024-06-05,,,2.19,Safe,9.81,Safe,0.0,Safe,2.81,Safe,4.61,Safe
+Filtered water,Visual Inspection,2024-03-23,0.49,Safe,,,,,,,3.2,Safe,1.02,Safe
+Tap water,Digital Test Kits,2024-09-12,9.95,Safe,0.36,Safe,4.86,Safe,0.0,Safe,,,0.04,Safe
+Rainwater Collection,Digital Test Kits,2024-04-25,7.86,Safe,,,3.25,Safe,1.0,Unsafe,4.4,Safe,0.86,Safe
+Rainwater Collection,Digital Test Kits,2023-12-10,8.04,Safe,3.29,Safe,2.39,Safe,,,3.87,Safe,4.36,Safe
+Rainwater Collection,Test strips,2023-11-09,,,,,,,0.0,Safe,0.49,Safe,4.93,Safe
+Well water,Test strips,2024-06-06,11.31,Safe,1.47,Safe,,,0.0,Safe,,,0.84,Safe
+Tap water,Digital Test Kits,2024-01-19,4.5,Safe,3.49,Safe,2.68,Safe,,,1.26,Safe,0.14,Safe
+Well water,Test strips,2024-09-23,,,,,4.57,Safe,0.0,Safe,4.59,Safe,4.04,Safe
+Well water,Digital Test Kits,2024-06-19,7.88,Safe,3.7,Safe,8.95,Safe,,,4.83,Safe,4.7,Safe
+Well water,Visual Inspection,2023-12-12,0.44,Safe,0.14,Safe,2.33,Safe,1.0,Unsafe,,,1.54,Safe
+Filtered water,Test strips,2024-03-22,7.87,Safe,1.77,Safe,8.56,Safe,0.0,Safe,0.93,Safe,,
+Filtered water,Test strips,2024-07-20,3.89,Safe,2.96,Safe,9.31,Safe,1.0,Unsafe,,,,
+Bottled water,Digital Test Kits,2024-03-10,5.63,Safe,3.96,Safe,7.28,Safe,1.0,Unsafe,2.7,Safe,2.63,Safe
+Ocean water,Visual Inspection,2023-12-19,,,2.24,Safe,2.71,Safe,1.0,Unsafe,,,0.23,Safe
+Filtered water,Visual Inspection,2024-06-14,,,3.66,Safe,1.77,Safe,1.0,Unsafe,1.21,Safe,,
+Ocean water,Test strips,2024-08-28,10.8,Safe,,,0.23,Safe,0.0,Safe,3.0,Safe,2.29,Safe
+Tap water,Test strips,2024-03-17,,,,,9.29,Safe,,,0.89,Safe,2.57,Safe
+Rainwater Collection,Test strips,2023-11-16,12.18,Safe,2.82,Safe,,,1.0,Unsafe,3.23,Safe,4.38,Safe
+Well water,Test strips,2024-08-31,3.45,Safe,0.56,Safe,4.6,Safe,0.0,Safe,4.36,Safe,4.8,Safe
+Well water,Test strips,2023-12-03,8.77,Safe,,,4.91,Safe,1.0,Unsafe,0.17,Safe,2.38,Safe
+Well water,Test strips,2024-03-02,2.72,Safe,0.47,Safe,,,,,4.58,Safe,,
+Bottled water,Visual Inspection,2024-05-18,,,2.82,Safe,7.44,Safe,0.0,Safe,4.94,Safe,4.51,Safe
+Bottled water,Digital Test Kits,2024-03-15,12.7,Safe,0.45,Safe,9.75,Safe,0.0,Safe,1.05,Safe,,
+Tap water,Visual Inspection,2024-08-24,,,1.74,Safe,1.65,Safe,0.0,Safe,3.62,Safe,3.58,Safe
+Well water,Visual Inspection,2024-06-02,12.92,Safe,,,6.09,Safe,1.0,Unsafe,4.88,Safe,,
+Tap water,Visual Inspection,2024-09-10,9.12,Safe,2.32,Safe,,,,,1.67,Safe,,
+Ocean water,Test strips,2024-05-11,3.37,Safe,,,,,,,3.75,Safe,1.72,Safe
+Tap water,Test strips,2024-10-04,,,3.0,Safe,,,0.0,Safe,,,,
+Tap water,Test strips,2024-01-27,1.63,Safe,2.92,Safe,,,1.0,Unsafe,4.53,Safe,0.25,Safe
+Filtered water,Test strips,2023-12-07,5.04,Safe,2.47,Safe,6.47,Safe,,,,,0.79,Safe
+Bottled water,Test strips,2024-09-22,6.11,Safe,0.12,Safe,9.19,Safe,1.0,Unsafe,,,2.47,Safe
+Filtered water,Digital Test Kits,2024-01-14,,,2.27,Safe,9.28,Safe,,,0.21,Safe,,
+Rainwater Collection,Digital Test Kits,2024-08-05,12.94,Safe,3.98,Safe,6.58,Safe,0.0,Safe,,,4.95,Safe
+Bottled water,Visual Inspection,2024-02-28,,,2.62,Safe,,,,,3.17,Safe,4.96,Safe
+Well water,Digital Test Kits,2024-03-10,11.96,Safe,,,1.66,Safe,0.0,Safe,3.98,Safe,,
+Bottled water,Visual Inspection,2024-08-02,4.99,Safe,,,,,0.0,Safe,2.81,Safe,3.74,Safe
+Rainwater Collection,Visual Inspection,2024-09-25,14.56,Safe,,,,,0.0,Safe,1.55,Safe,,
+Filtered water,Visual Inspection,2024-09-20,12.77,Safe,,,3.16,Safe,0.0,Safe,2.16,Safe,4.47,Safe
+Rainwater Collection,Test strips,2024-01-04,,,3.36,Safe,,,1.0,Unsafe,4.23,Safe,2.96,Safe
+Tap water,Visual Inspection,2024-09-12,10.36,Safe,,,4.56,Safe,1.0,Unsafe,,,3.47,Safe
+Well water,Test strips,2024-08-23,12.5,Safe,,,6.47,Safe,1.0,Unsafe,,,,
+Bottled water,Visual Inspection,2024-05-11,0.69,Safe,0.7,Safe,,,0.0,Safe,1.1,Safe,1.39,Safe
