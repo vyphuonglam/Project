@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 from openai import OpenAI
 
 # Initialize the OpenAI client
-client = OpenAI(api_key = "OPENAI_API_KEY")
+client = OpenAI(api_key="OPENAI_API_KEY")  # Replace with your actual API key
 
 # Function to get AI-generated safety tips based on prediction
 def get_completion(prompt, model="gpt-3.5-turbo"):
@@ -18,21 +18,34 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
     )
     return completion.choices[0].message.content
 
-# Load synthetic water testing data 
-data = pd.read_csv("water_potability.csv")
+# Load synthetic water testing data
+data = pd.read_csv("water_potability_sources.csv")
 
 st.title("Water Quality Prediction & Emergency Alert System")
 st.write("Monitor potential water quality issues and receive safety recommendations.")
 
-# User input for water source and testing history
+# Ensure 'Water Source' is in the data columns and get unique options
+if 'Water Source' in data.columns:
+    source_options = data['Water Source'].unique().tolist()
+else:
+    st.error("The 'Water Source' column is missing in the dataset. Please check the CSV file structure.")
+    st.stop()
+
+# User input for water source
 source_options = st.selectbox(
     "Select your water source:",
-    ["Tap water", "Filtered water", "Bottled water", "Rainwater Collection", "Well water", "Ocean water"]
+    source_options
 )
 
-# Simulate historical water quality data based on source
-st.write("Generating predictive analysis for:", source_options)
+# Filter data based on the selected water source
 selected_data = data[data["Water Source"] == source_options]
+
+# Check if there are matching rows for the selected source
+if not selected_data.empty:
+    st.write("Generating predictive analysis for:", source_options)
+else:
+    st.warning(f"No data found for the selected source: {source_options}")
+    st.stop()
 
 # Dummy prediction based on past data (e.g., contamination trends)
 days_ahead = 7
@@ -54,4 +67,5 @@ else:
     st.success("No high-risk days detected. Continue regular monitoring.")
 
 # Reminder for testing
-st.button("Set Reminder", help="Click to set a reminder for water testing on risky days.")
+if st.button("Set Reminder", help="Click to set a reminder for water testing on risky days."):
+    st.success("Reminder has been set for water testing.")
