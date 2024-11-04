@@ -1,0 +1,11 @@
+Water Source,ph,Hardness,Solids,Chloramines,Sulfate,Conductivity,Organic_carbon,Trihalomethanes,Turbidity,Potability
+Tap water,7.1,200,15000,5.0,330,420,20.0,75,4.5,1
+Bottled water,6.9,180,21000,3.8,310,350,18.5,65,3.1,1
+Well water,5.5,120,18000,6.5,290,390,22.0,55,4.0,0
+Rainwater Collection,6.5,150,16000,4.1,325,400,19.0,70,2.8,1
+Filtered water,7.0,210,14000,5.2,340,430,21.5,80,4.9,1
+Ocean water,8.1,100,30000,3.9,280,340,17.5,60,3.5,0
+Tap water,7.2,205,15500,5.1,335,410,20.5,78,4.6,1
+Filtered water,6.8,180,20000,4.0,315,370,19.5,66,3.0,1
+Bottled water,7.1,175,22000,4.5,305,360,18.0,68,3.2,1
+Well water,5.6,125,18500,6.0,295,385,22.5,57,4.1,0
