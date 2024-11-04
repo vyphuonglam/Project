@@ -2,21 +2,21 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
-import openai
+from openai import OpenAI
 
 # Initialize the OpenAI client
-openai.api_key = "YOUR-API-KEY-HERE"
+client = OpenAI(api_key = "OPENAI_API_KEY")
 
 # Function to get AI-generated safety tips based on prediction
 def get_completion(prompt, model="gpt-3.5-turbo"):
-    completion = openai.ChatCompletion.create(
+    completion = client.chat.completions.create(
         model=model,
         messages=[
             {"role": "system", "content": "You are a helpful assistant providing water safety recommendations based on predicted contamination risk levels."},
             {"role": "user", "content": prompt},
         ]
     )
-    return completion.choices[0].message.content.strip()
+    return completion.choices[0].message.content
 
 # Load synthetic water testing data 
 data = pd.read_csv("synthetic_water_testing_data.csv")
