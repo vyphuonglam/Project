@@ -19,7 +19,7 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
     return completion.choices[0].message.content
 
 # Load synthetic water testing data 
-data = pd.read_csv("synthetic_water_testing_data.csv")
+data = pd.read_csv("Santa_Clara_County_Water_Bodies.csv")
 
 st.title("Water Quality Prediction & Emergency Alert System")
 st.write("Monitor potential water quality issues and receive safety recommendations.")
