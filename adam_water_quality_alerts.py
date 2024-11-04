@@ -8,14 +8,15 @@ import openai
 openai.api_key = "YOUR-API-KEY-HERE"
 
 # Function to get AI-generated safety tips based on prediction
-def get_safety_tips(risk_level):
-    prompt = f"The water quality has been predicted to have a {risk_level} risk of contamination. What are the recommended safety measures for users until they can conduct a proper test?"
-    response = openai.Completion.create(
-        engine="text-davinci-003",
-        prompt=prompt,
-        max_tokens=100,
+def get_completion(prompt, model="gpt-3.5-turbo"):
+    completion = openai.ChatCompletion.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant providing water safety recommendations based on predicted contamination risk levels."},
+            {"role": "user", "content": prompt},
+        ]
     )
-    return response.choices[0].text.strip()
+    return completion.choices[0].message.content.strip()
 
 # Load synthetic water testing data 
 data = pd.read_csv("synthetic_water_testing_data.csv")
@@ -46,7 +47,8 @@ for i, date in enumerate(future_dates):
 # Check for any high-risk predictions and provide safety tips
 if "High" in predicted_quality:
     st.warning("High risk detected on upcoming days. Follow safety recommendations below.")
-    tips = get_safety_tips("high")
+    prompt = "The water quality has been predicted to have a high risk of contamination. What are the recommended safety measures for users until they can conduct a proper test?"
+    tips = get_completion(prompt)
     st.write("Safety Tips:", tips)
 else:
     st.success("No high-risk days detected. Continue regular monitoring.")
