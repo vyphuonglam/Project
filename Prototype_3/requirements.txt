@@ -1,0 +1,12 @@
+streamlit
+openai
+pandas
+numpy
+datetime
+fitz
+os
+folium
+st_folium
+gtts
+PIL
+pathlib
