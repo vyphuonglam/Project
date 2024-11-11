@@ -11,34 +11,34 @@ from gtts import gTTS
 from PIL import Image
 from pathlib import Path
 
+
 def app():
     st.title("WATER TESTING GUIDE")
     st.write("Welcome to WATER TESTING GUIDE")
 
 
     # Initialize the OpenAI client
-    client = OpenAI(api_key="open ai key")
+    client = OpenAI(api_key="APIKEY")
+
+
 
     # ChatGPT help
     pdf_path = "PDF.pdf"
-
     def extract_text_from_pdf(pdf_path):    
         if not os.path.isfile(pdf_path):
             print("Error: File not found!")
-            return ""
-         
-        try:
+        else:
+            try:
                 # Function to extract text from PDF
-            text = ""
-            with fitz.open(pdf_path) as pdf:
-                for page_num, page in enumerate(pdf, start=1):
-                    text += f"--- Page {page_num} ---\n"
-                    text += page.get_text()
-            return text
-        except Exception as e:
-            print(f"An error occurred: {e}")
-            return ""
-    
+                def extract_text_from_pdf(pdf_path):
+                    text = ""
+                    with fitz.open(pdf_path) as pdf:
+                        for page_num, page in enumerate(pdf, start=1):
+                            text += f"--- Page {page_num} ---\n"
+                            text += page.get_text()
+                    return text
+            except Exception as e:
+                print(f"An error occurred: {e}")
     pdf_text = extract_text_from_pdf(pdf_path)
     def get_guided_instructions(pdf_content,prompt,model="gpt-3.5-turbo"):
         completion = client.chat.completions.create(
@@ -48,10 +48,7 @@ def app():
                         {"role": "user", "content": prompt}
             ]
         )
-        steps_text = completion.choices[0].message.content
-        steps = steps_text.split("\n")
-        return [step for step in steps if step]  
-       
+        return completion.choices[0].message.content
 
     def display_image(image_name):
          file_path = Path(__file__).parent / 'images' / image_name
@@ -96,7 +93,9 @@ def app():
         os.remove("guided_instructions.mp3")
     elif selected_test == "Pin Test":
         st.subheader("Pin Test")
-        display_image("pin2.png", "pin3.png", "pin4.png")
+        display_image("pin2.png")
+        display_image("pin3.png")
+        display_image("pin4.png")
         guided_instructions = get_guided_instructions(pdf_text, "Instruct user to perform the pin test that's easy to follow.",model="gpt-3.5-turbo")
         st.write(guided_instructions)
         # Text-to-speech conversion
@@ -113,7 +112,8 @@ def app():
         os.remove("guided_instructions.mp3")
     elif selected_test == "Toilet Leak Test":
         st.subheader("Toilet Leak Test")
-        display_image("toilet3.png", "toilet4.png")
+        display_image("toilet3.png")
+        display_image("toilet4.png")
         guided_instructions = get_guided_instructions(pdf_text, "Instruct user to perform the toilet leak test that's easy to follow.",model="gpt-3.5-turbo")
         st.write(guided_instructions)
         # Text-to-speech conversion
@@ -146,3 +146,5 @@ def app():
         os.remove("guided_instructions.mp3")
     else:
         st.write("Please select a test to see the instructions.")
+
+app()
