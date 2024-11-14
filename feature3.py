@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from geopy.geocoders import Nominatim
+import pydeck as pdk
 
 # Title and subtitle
 st.title("Water Testing Information Hub")
@@ -13,11 +14,19 @@ zip_code = st.text_input("Enter your zip code to find the nearest water testing 
 try:
     # Read the CSV files with ISO-8859-1 encoding to handle special characters
     target_locations = pd.read_csv("target.csv", encoding="ISO-8859-1")
-    walmart_locations = pd.read_csv("walmart_2018_11_06.csv", encoding="ISO-8859-1")
+    walmart_locations = pd.read_csv("walmartstreamlit run feature3.py.csv", encoding="ISO-8859-1")
     
     # Standardize column names for consistency
-    target_locations = target_locations.rename(columns={"Address.Latitude": "latitude", "Address.Longitude": "longitude", "Name": "location_name"})
+    target_locations = target_locations.rename(columns={"Address.Latitude": "latitude", "Address.Longitude": "longitude", "Name": "location_name", "Address.Street": "address"})
     walmart_locations = walmart_locations.rename(columns={"latitude": "latitude", "longitude": "longitude", "name": "location_name"})
+    
+    # If 'address' column is missing in Walmart data, add a placeholder address
+    if 'address' not in walmart_locations.columns:
+        walmart_locations['address'] = "Address not available"
+
+     # If 'address' column is missing in Target data, add a placeholder address
+    if 'address' not in target_locations.columns:
+        target_locations['address'] = "Address not available"    
     
     # Concatenate Target and Walmart locations into a single DataFrame
     water_testing_locations = pd.concat([target_locations, walmart_locations], ignore_index=True)
@@ -46,14 +55,34 @@ if st.button("Find Nearby Water Testing Kit"):
             nearby_locations = water_testing_locations.nsmallest(3, "distance")
 
             if not nearby_locations.empty:
-                # Display the top 3 nearest locations in a simple list
+                # Display the top 3 nearest locations with names and addresses
                 st.write("Top 3 Nearest Water Testing Kit Locations:")
                 for _, row in nearby_locations.iterrows():
-                    st.write(f"{row['location_name']}")
+                    st.write(f"{row['location_name']} - Address: {row['address']}")
 
-                # Map display with only the nearby locations to focus the zoom
+                # Map display using Pydeck with tooltips
                 st.subheader("Map of Nearest Water Testing Kit Locations")
-                st.map(nearby_locations[["latitude", "longitude"]])
+                nearby_locations_map = pdk.Deck(
+                    map_style="mapbox://styles/mapbox/streets-v11",
+                    initial_view_state=pdk.ViewState(
+                        latitude=location.latitude,
+                        longitude=location.longitude,
+                        zoom=12,
+                        pitch=0,
+                    ),
+                    layers=[
+                        pdk.Layer(
+                            'ScatterplotLayer',
+                            data=nearby_locations,
+                            get_position='[longitude, latitude]',
+                            get_color='[200, 30, 0, 160]',
+                            get_radius=200,
+                            pickable=True,
+                        )
+                    ],
+                    tooltip={"html": "<b>{location_name}</b><br>Address: {address}", "style": {"color": "white"}}
+                )
+                st.pydeck_chart(nearby_locations_map)
 
             else:
                 st.write("No water testing kit locations found nearby.")
